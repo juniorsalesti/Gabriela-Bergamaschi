@@ -16,13 +16,19 @@ export const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_HANDLE}`;
 export const LOCATION_LABEL = "Swiss Park • Campinas, SP";
 export const LOCATION_FULL = "Swiss Park, Campinas — SP";
 
+import heroImg from "../assets/images/hero_pilates_studio_1793306760532.jpg";
+import portraitImg from "../assets/images/gabriela_portrait.png";
+import bodyAwarenessImg from "../assets/images/pilates_body_awareness_1793306761745.jpg";
+import studioReformerImg from "../assets/images/pilates_reformer_studio_1793306763198.jpg";
+import physiotherapyImg from "../assets/images/physiotherapy_movement_1793306763602.jpg";
+
 export const IMAGES = {
-  hero: "/src/assets/images/hero_pilates_studio_1793306760532.jpg",
-  portrait: "/src/assets/images/gabriela_portrait.png",
+  hero: heroImg,
+  portrait: portraitImg,
   portraitUrl: "https://i.ibb.co/Y7vD9FVv/imagem-2026-10-29-185513406.png",
-  bodyAwareness: "/src/assets/images/pilates_body_awareness_1793306761745.jpg",
-  studioReformer: "/src/assets/images/pilates_reformer_studio_1793306763198.jpg",
-  physiotherapy: "/src/assets/images/physiotherapy_movement_1793306763602.jpg",
+  bodyAwareness: bodyAwarenessImg,
+  studioReformer: studioReformerImg,
+  physiotherapy: physiotherapyImg,
 };
 
 export function getWhatsAppUrl(
