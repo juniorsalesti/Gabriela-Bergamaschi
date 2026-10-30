@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'DM Serif Display', Georgia, serif;
+    --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    --color-soft: #B9DCE5;
+    --color-petrol: #315B65;
+    --color-petrol-dark: #23424a;
+    --color-offwhite: #FAF9F6;
+    --color-grey: #777A78;
+    --color-sage: #A9B9AE;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: var(--color-offwhite);
+    color: var(--color-petrol);
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    overflow-x: hidden;
+    min-width: 320px;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+@utility font-serif {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+@utility font-sans {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Mobile no-scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom delicate blur and organic curves */
+.organic-shape {
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+}
+
+.organic-shape-2 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.arch-top {
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+}
+
+@media (min-width: 768px) {
+  .arch-top-lg {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+  }
+}
+
+/* Subtle glassmorphism */
+.glass-header {
+  background: rgba(250, 249, 246, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

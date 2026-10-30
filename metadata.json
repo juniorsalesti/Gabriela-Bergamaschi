@@ -1,0 +1,8 @@
+{
+  "name": "Gabriela Bergamaschi | Pilates e Fisioterapia",
+  "description": "Site One Page premium de Pilates e Fisioterapia com Gabriela Bergamaschi no Swiss Park, Campinas — SP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
